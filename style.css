@@ -175,9 +175,13 @@ body {
 }
 
 .browser-window .content .search input {
+  color: #555;
   flex: 1;
   height: 100%;
   background-color: transparent;
+}
+.browser-window .content .search input::placeholder {
+  color: #555;
 }
 
 .browser-window .content .search button {
