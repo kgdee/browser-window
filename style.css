@@ -4,6 +4,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 
+:root {
+  --frame-color: #ddd;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -49,7 +53,7 @@ body {
 
 
 .browser-window {
-  background-color: #ddd;
+  background-color: var(--frame-color);
   width: 100%;
   height: 100%;
   padding: 5px;
