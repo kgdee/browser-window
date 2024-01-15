@@ -1,9 +1,10 @@
-
+const browserContent = document.querySelector(".browser-window .content")
 
 window.addEventListener('message', (event) => {
-  if (event.origin !== 'https://kgdee.github.io') return
+  const { image, backgroundColor, frameColor, textColor } = event.data
 
-  const { variableName, value } = event.data
-
-  document.documentElement.style.setProperty(variableName, value)
+  if (image) browserContent.style.backgroundImage = image
+  if (backgroundColor) document.documentElement.style.setProperty("--background-color", backgroundColor)
+  if (frameColor) document.documentElement.style.setProperty("--frame-color", frameColor)
+  if (textColor) document.documentElement.style.setProperty("--text-color", textColor)
 });

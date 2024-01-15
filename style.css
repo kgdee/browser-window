@@ -6,6 +6,8 @@
 
 :root {
   --frame-color: #ddd;
+  --background-color: #fff;
+  --text-color: #333;
 }
 
 * {
@@ -17,6 +19,10 @@
   border: none;
   text-decoration: none;
   line-height: 1;
+}
+
+*, *::placeholder {
+  color: var(--text-color);
 }
 
 a, button {
@@ -43,7 +49,6 @@ html, body {
 body {
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
-  color: #333;
 }
 
 .container {
@@ -94,7 +99,7 @@ body {
 }
 
 .tab.active {
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 .address-bar {
@@ -102,7 +107,7 @@ body {
   gap: 10px;
   width: 100%;
   padding: 5px 15px;
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 5px 5px 0 0;
 }
 
@@ -116,7 +121,7 @@ body {
   flex: 1;
   display: flex;
   align-items: center;
-  background-color: #eee;
+  background-color: var(--frame-color);
   border-radius: 20px;
   padding: 5px 15px;
 }
@@ -128,10 +133,10 @@ body {
 
 
 .bookmarks {
-  background-color: white;
+  background-color: var(--background-color);
   display: flex;
   padding: 8px 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .bookmarks .item {
@@ -147,7 +152,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background-color: white;
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .browser-window .content .logo {
@@ -159,7 +167,7 @@ body {
   width: 500px;
   height: 40px;
   padding: 10px 20px;
-  background-color: #eee;
+  background-color: var(--frame-color);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -194,7 +202,7 @@ body {
   height: 40px;
   border-radius: 50%;
   padding: 10px;
-  background-color: #eee;
+  background-color: var(--frame-color);
 }
 
 .shortcuts .item .icon-container .icon {
