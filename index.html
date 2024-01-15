@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Window</title>
+  <!-- Set Favicon -->
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="browser-window">
+    <div class="control-btns">
+      <button>_</button>
+      <button><i class="bi bi-square"></i></button>
+      <button><i class="bi bi-x"></i></button>
+    </div>
+    <div class="tabs">
+      <div class="tab active">
+        Google
+        <i class="bi bi-x"></i>
+      </div>
+      <div class="tab">
+        Chrome
+        <i class="bi bi-x"></i>
+      </div>
+      <i class="bi bi-plus add"></i>
+    </div>
+    <div class="address-bar">
+      <div class="nav-btns">
+        <button><i class="bi bi-arrow-left"></i></button>
+        <button><i class="bi bi-arrow-right"></i></button>
+        <button><i class="bi bi-arrow-clockwise"></i></button>
+      </div>
+      <div class="url-input-container">
+        <i class="bi bi-search"></i>
+        <input type="text" class="url-input">
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+
+    <div class="bookmarks">
+      <div class="item">
+        <img src="assets/themes.png" class="icon">
+        Themes
+      </div>
+    </div>
+    <div class="content">
+      <img src="assets/logo.png" class="logo">
+      <div class="search">
+        <input type="text" placeholder="Search Google or type a URL">
+        <img src="assets/mic.png">
+      </div>
+      <div class="shortcuts">
+        <div class="item">
+          <div class="icon-container">
+            <img src="assets/google.png" class="icon">
+          </div>
+          Google
+        </div>
+
+        <div class="item add-btn">
+          <div class="icon-container">
+            <img src="assets/plus.svg" class="icon">
+          </div>
+          Add shortcut
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
