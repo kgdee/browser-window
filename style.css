@@ -167,7 +167,9 @@ body {
   width: 500px;
   height: 40px;
   padding: 10px 20px;
-  background-color: var(--frame-color);
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   overflow: hidden;
 }
