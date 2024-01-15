@@ -7,7 +7,7 @@
 :root {
   --frame-color: #ddd;
   --background-color: #fff;
-  --text-color: #333;
+  --text-color: #555;
 }
 
 * {
@@ -198,16 +198,20 @@ body {
 }
 
 .shortcuts .item .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  padding: 10px;
   background-color: var(--frame-color);
 }
 
-.shortcuts .item .icon-container .icon {
-  width: 100%;
-  height: 100%;
+.shortcuts .item .icon-container img {
+  width: 25px;
+  height: 25px;
   object-fit: cover;
-  fill: var(--text-color);
+}
+.shortcuts .item .icon-container i {
+  font-size: 1.5rem;
 }
