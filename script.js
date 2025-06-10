@@ -19,6 +19,6 @@ function checkOrientation() {
   warning.classList.toggle("hidden", !isPortrait)
 }
 
-window.addEventListener("load", checkOrientation);
+document.addEventListener("DOMContentLoaded", checkOrientation);
 window.addEventListener("resize", checkOrientation);
 window.addEventListener("orientationchange", checkOrientation);
