@@ -11,3 +11,14 @@ window.addEventListener('message', (event) => {
   if (frameColor) document.documentElement.style.setProperty("--frame-color", frameColor)
   if (textColor) document.documentElement.style.setProperty("--text-color", textColor)
 });
+
+function checkOrientation() {
+  const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+  const warning = document.querySelector(".orientation-warning");
+
+  warning.classList.toggle("hidden", !isPortrait)
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
