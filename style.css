@@ -173,6 +173,7 @@ body {
 }
 
 .address-bar .url-input input {
+  min-width: 0;
   flex: 1;
   background-color: transparent;
 }
@@ -193,6 +194,11 @@ body {
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+.bookmarks .item img {
+  width: 20px;
+  height: 20px;
 }
 
 .page {
@@ -237,7 +243,7 @@ body {
 }
 
 .shortcuts {
-  width: 120px;
+  width: 150px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
   justify-content: center;
@@ -253,7 +259,7 @@ body {
   text-align: center;
 }
 
-.shortcuts .item .icon-container {
+.shortcuts .item .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,13 +269,13 @@ body {
   background-color: var(--frame-color);
 }
 
-.shortcuts .item .icon-container img {
+.shortcuts .item .icon img {
   width: 70%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
-.shortcuts .item .icon-container i {
+.shortcuts .item .icon i {
   font-size: 1.5rem;
 }
 
@@ -282,11 +288,14 @@ body {
   .tabs {
     display: none;
   }
+
+  .address-bar .url-input {
+    padding: 10px;
+  }
 }
 
 /* Small screens (Phones, up to 480px wide) */
 @media (max-width: 480px) {
-
   .address-bar .home-btn {
     display: inline-block;
   }
